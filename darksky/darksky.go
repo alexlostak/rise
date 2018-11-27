@@ -59,10 +59,10 @@ func (d *DarkSkyForecast) GetSummary() string {
 
 // GetTodaysHigh - Gets the temperature high from the first daily data and returns it as a string
 func (d *DarkSkyForecast) GetTodaysHigh() string {
-	return strconv.FormatFloat(d.Daily.Data[0].TemperatureHigh, 'f', 2, 64)
+	return strconv.FormatFloat(d.Daily.Data[0].TemperatureHigh, 'f', 0, 64)
 }
 
 // GetTodaysLow - Gets the temperature low from the first daily data and returns it as a string
 func (d *DarkSkyForecast) GetTodaysLow() string {
-	return strconv.FormatFloat(d.Daily.Data[0].TemperatureLow, 'f', 2, 64)
+	return strconv.FormatFloat(d.Daily.Data[0].TemperatureLow, 'f', 0, 64)
 }
